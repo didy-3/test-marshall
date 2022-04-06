@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Kanit:wght@500;800;900&family=Montserrat:wght@600&display=swap');
+
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body{
+  background-color: rgba(26, 31, 36, 1);
+  font-family: 'Kanit', sans-serif;
+  font-size: 18px;
+  max-width: 1400px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 1);
+  a{
+    color: rgba(255, 255, 255, 1);
+  }
+  h1{
+    color: rgba(218, 187, 144, 1);
+  }
+  .scroll-arrow{
+    cursor: pointer;
+    position: sticky;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25px;
+    animation: bounce 1s infinite;
+    @keyframes bounce {
+      0% {
+        transform:(translateY(0));
+      }
+      25% {
+        transform:(translateY(5px));
+      }
+      50% {
+        transform:(translateY(10px));
+      }
+      75% {
+        transform:(translateY(5px));
+      }
+      100% {
+        transform:(translateY(0));
+      }
+    }
+  }
+}
