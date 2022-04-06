@@ -1,0 +1,110 @@
+.newsletter {
+  margin-top: 10%;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 55% 45%;
+  max-height: 322px;
+  background-color: #dabb90;
+  border-radius: 3px;
+  color: #1a1f24;
+}
+.newsletter .newsletter-text {
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  padding-left: 5%;
+}
+.newsletter .newsletter-text .newsletter-title {
+  color: #1a1f24;
+  font-family: "Kanit", serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 130%;
+  align-self: center;
+}
+.newsletter .newsletter-text .newsletter-offer {
+  font-family: "Kanit", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  text-transform: uppercase;
+  align-self: center;
+  justify-content: start;
+}
+.newsletter .newsletter-text .newsletter-form {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  height: 60px;
+  place-content: stretch;
+  column-gap: 20px;
+}
+.newsletter .newsletter-text .newsletter-form .newsletter-input {
+  border: 2px solid #1A1F24;
+  border-radius: 3px;
+}
+.newsletter .newsletter-text .newsletter-form .newsletter-btn {
+  background-color: #1a1f24;
+  color: #ededed;
+  border: 2px solid #1A1F24;
+  border-radius: 3px;
+}
+.newsletter .newsletter-text .newsletter-privacy, .newsletter .newsletter-text a {
+  font-family: "Inter", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  text-transform: lowercase;
+  place-self: start;
+}
+.newsletter .newsletter-text .newsletter-privacy a, .newsletter .newsletter-text a a {
+  color: #1a1f24;
+  text-decoration: underline;
+}
+.newsletter .newsletter-img {
+  display: grid;
+  min-width: auto;
+  transform: translateY(-30%);
+  justify-content: end;
+}
+
+@media only screen and (max-width: 900px) {
+  .newsletter {
+    grid-template-columns: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 350px;
+  }
+  .newsletter .newsletter-text {
+    padding: 0 20px;
+    grid-template-rows: 30% 15% 40% 15%;
+  }
+  .newsletter .newsletter-text .newsletter-title {
+    font-size: 36px;
+    line-height: 115%;
+  }
+  .newsletter .newsletter-text .newsletter-offer {
+    align-self: start;
+  }
+  .newsletter .newsletter-text .newsletter-form {
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 15px;
+    place-content: stretch;
+    height: 100%;
+  }
+  .newsletter .newsletter-text .newsletter-form .newsletter-input {
+    height: 100%;
+  }
+  .newsletter .newsletter-text .newsletter-form .newsletter-btn {
+    height: 100%;
+  }
+  .newsletter .newsletter-text .newsletter-privacy {
+    padding-top: 5px;
+  }
+  .newsletter .newsletter-img {
+    display: none;
+  }
+}
